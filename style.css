@@ -1,0 +1,163 @@
+/* Variáveis de Cores (Tema Claro) */
+:root {
+    --color-primary: #4B69FD; /* Fundo principal */
+    --color-secondary: #FFF9EB; /* Fundo da seção */
+    --color-tertiary: #C4C4C4; /* Cor auxiliar */
+    --color-text: #444444; /* Texto principal */
+    --color-title: #000000; /* Cor dos títulos */
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-white: #FFFFFF;
+}
+
+/* Tema Escuro */
+.dark-theme {
+    --color-primary: #1E1E1E;
+    --color-secondary: #2C2C2C;
+    --color-text: #FFFFFF; 
+    --color-title: #FFD700; /* Títulos em amarelo para destaque */
+    --color-button: #FF8C00;
+    --color-button-hover: #E76F00;
+}
+
+/* Reset e Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+/* Seção de Entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+/* Títulos */
+h1, h2 {
+    color: var(--color-title);
+    transition: color 0.3s;
+}
+
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Contêineres de Entrada */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+/* Botões */
+button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #a1a1a1;
+}
+
+.button-draw {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+.button-theme {
+    margin-top: 20px;
+    background-color: var(--color-button);
+    color: var(--color-white);
+}
+
+.button-theme:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #05DF05;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
